@@ -1,0 +1,36 @@
+.footer
+	margin: 15px 0 
+	display: flex
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row 
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	-webkit-flex-wrap: nowrap 
+	-ms-flex-wrap: nowrap 
+	flex-wrap: nowrap 
+	-webkit-align-items: stretch 
+	align-items: stretch 
+	ul
+		display: inline 
+		list-style-type: none 
+		
+		&.footer__left
+		&.footer__right
+			li
+				text-transform: uppercase
+				margin: 0 20px
+			li.footer__right--last
+				margin: 0 0 0 20px 
+				 
+
+	li
+		display: inline
+		font-family: roboto-bold 
+		a
+			text-decoration: none 
+			color: #000 
+			&:hover
+				border-bottom: 1px solid black 
+		
+	&__items

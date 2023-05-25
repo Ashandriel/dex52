@@ -1,0 +1,55 @@
+.header
+	position: relative
+	text-align: center
+	color: #FFF
+
+	&__small
+		min-height: $header-height-small
+		@media screen and (max-width: $v-small) 
+			min-height: $header-height-small-mobile
+
+	&__medium
+		min-height: $header-height-medium
+		@media screen and (max-width: $v-small)
+			min-height: $header-height-medium-mobile
+
+	&__large
+		min-height: $header-height-large
+		@media screen and (max-width: $v-small)
+			min-height: $header-height-large-mobile
+
+	&__content
+		max-width: 540px 			
+		margin: auto
+		padding-top: 12rem 
+
+	&__headline
+		font-family: alegreya-extra-bold
+		font-size: $headline-large
+		margin-bottom: $gutter-2x 
+		@media screen and (max-width: $v-small)
+			font-size: $headline-large-mobile
+			margin-bottom: $gutter-1x 		
+	&__sub-headline
+		font-family: alegreya-medium
+		font-size: $headline 
+		margin-bottom: $gutter-2x
+		@media screen and (max-width: $v-small)
+			font-size: $headline-mobile
+			margin-bottom: $gutter-1x 		
+	&__text
+		font-family: alegreya-medium
+		font-size: $standard 
+		@media screen and (max-width: $v-small)
+			font-size: $standard-mobile
+			margin-bottom: $gutter-1x 		
+			
+
+
+	&__creator
+		background: url(../../images/bg_lineart_2.png)
+		width: 100vw 
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat 

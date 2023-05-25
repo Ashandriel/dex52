@@ -1,7 +1,108 @@
 /*base classes*/
 
-.wrapper
-	max-width: 1600px 
 
-.mt--1
-	margin-top: 10px
+*
+	margin: 0
+	padding: 0
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box  
+	scroll-margin-top: 100px
+	-ms-word-wrap: break-word 
+	word-wrap: break-word 
+
+html
+	scroll-behavior: smooth
+	
+a
+	text-decoration: none 
+
+.wrapper
+	position: relative
+	display: block
+	max-width: 1920px
+	margin: auto 
+	position: relative
+
+	&__smaller
+		max-width: 1600px 
+
+	&__small
+		max-width: 1280px 		
+
+/*MARGINS*/
+
+.mb
+  &--1
+    margin-bottom: $gutter-1x !important
+  &--2
+    margin-bottom: $gutter-2x !important
+  &--3
+    margin-bottom: $gutter-3x !important
+  &--4
+    margin-bottom: $gutter-4x !important
+  &--5
+    margin-bottom: $gutter-5x !important
+  &--6
+    margin-bottom: $gutter-6x !important
+  &--7
+    margin-bottom: $gutter-7x !important
+  &--8
+    margin-bottom: $gutter-8x !important
+  &--9
+    margin-bottom: $gutter-9x !important
+  &--10
+    margin-bottom: $gutter-10x !important
+    
+
+.mt
+  &--1
+    margin-top: $gutter-1x !important
+  &--2
+    margin-top: $gutter-2x !important
+  &--3
+    margin-top: $gutter-3x !important
+  &--4
+    margin-top: $gutter-4x !important
+  &--5
+    margin-top: $gutter-5x !important
+  &--6
+    margin-top: $gutter-6x !important
+  &--7
+    margin-top: $gutter-7x !important
+  &--8
+    margin-top: $gutter-8x !important
+  &--9
+    margin-top: $gutter-9x !important
+  &--10
+    margin-top: $gutter-10x !important
+	
+
+
+.space
+	height: 120px
+	@media screen and (max-width: $v-medium) 
+		height: 100px  
+	@media screen and (max-width: $v-smaller) 
+		height: 60px  
+	@media screen and (max-width: $v-small) 
+		height: 40px  				
+		
+	&--smaller
+		height: 60px
+		@media screen and (max-width: $v-medium) 
+			height: 50px  
+		@media screen and (max-width: $v-smaller) 
+			height: 30px  
+		@media screen and (max-width: $v-small) 
+			height: 20px  					
+
+		
+	&--small
+		height: 30px
+		@media screen and (max-width: $v-medium) 
+			height: 25px  
+		@media screen and (max-width: $v-smaller) 
+			height: 15px  
+		@media screen and (max-width: $v-small) 
+			height: 10px  

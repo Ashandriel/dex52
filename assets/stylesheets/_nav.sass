@@ -1,0 +1,67 @@
+.navigation
+	z-index: 5
+	position: fixed
+	top: 0 
+	margin: 15px 0 
+	display: flex
+	color: #FFF 
+	-webkit-flex-direction: row 
+	-ms-flex-direction: row 
+	flex-direction: row 
+	-webkit-justify-content: space-between 
+	justify-content: space-between 
+	-webkit-flex-wrap: nowrap 
+	-ms-flex-wrap: nowrap 
+	flex-wrap: nowrap 
+	-webkit-align-items: stretch 
+	align-items: stretch 
+	ul
+		display: inline 
+		list-style-type: none 
+		
+		&.navigation__left
+			width: 200px
+			height: 50px  
+			li
+				width: 100%
+				height: 50px  
+				
+				a.logo
+					display: inline-block
+					&::before
+						content: ''
+						background-image: url(../../images/logo_dex52.png)
+						background-size: cover
+    				background-repeat: no-repeat
+    				background-position: center
+						width: 75px 
+						height: 25px 
+						display: inline-block
+						
+					&:hover
+					 	&::before
+						 	content: ''
+						 	background-image: url(../../images/logo_dex52_hover.png)
+						 	width: 75px 
+							height: 25px 		 
+							display: inline-block
+							text-decoration: none
+							border-bottom: none 
+							
+		&.navigation__right
+			li
+				text-transform: uppercase
+				margin: 0 20px
+			li.navigation__right--last
+				margin: 0 0 0 20px 
+				 
+
+	li
+		display: inline-block
+		font-family: roboto-bold 
+		a
+			text-decoration: none 
+			color: #FFF 
+			&:hover
+				border-bottom: 3px solid white 
+		

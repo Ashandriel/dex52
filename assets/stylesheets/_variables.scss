@@ -15,7 +15,7 @@ $color-6: #80a5c6;
 $color-7: #67bd93;
 $color-8: #ec9b74;
 
-/*colors-gradients*/
+/*colors-corresponding-colors-for-gradients*/
 
 $color-1-g: #ec9b74;
 $color-2-g: #841e69;
@@ -25,4 +25,48 @@ $color-5-g: #6a7bca;
 $color-6-g: #67bd93;
 $color-7-g: #e6ce85;
 $color-8-g: #e6ce85;
+
+/*viewports*/
+
+$v-medium: 1200px;
+$v-smaller: 1000px;
+$v-small: 600px;
+
+/*grid variables*/
+
+$grid-width: 192rem; // 1920px
+$gutter-vertical: 4rem; // 40px
+$gutter-horizontal: 4rem; // 40px
+$gutter-1x: 1rem; //10px
+$gutter-2x: 2rem; //10px
+$gutter-3x: 3rem; //10px
+$gutter-4x: 4rem; //10px
+$gutter-5x: 5rem; //50px
+$gutter-6x: 6rem; //50px
+$gutter-7x: 7rem; //50px
+$gutter-8x: 8rem; //50px
+$gutter-9x: 9rem; //50px
+$gutter-10x: 10rem; //50px
+
+
+/*font-sizes*/
+
+$standard: 22px;
+$standard-mobile: 11px;
+$buttons: 20px;
+$buttons-mobile: 9px;
+$headline: 32px;
+$headline-mobile: 14px;
+$headline-large: 56px;
+$headline-large-mobile: 20px;
+
+/*header-heights*/
+
+$header-height-small: 320px;
+$header-height-medium: 540px;
+$header-height-large: 920px;
+
+$header-height-small-mobile: 320px;
+$header-height-medium-mobile: 480px;
+$header-height-large-mobile: 540px;
 

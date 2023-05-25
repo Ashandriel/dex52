@@ -1,0 +1,20 @@
+.feature-grid
+	text-align: center
+	&__element
+		min-height: 400px
+		@media screen and (max-width: $v-small)
+			min-height: 150px   
+			margin-left: 20%
+			margin-right: 20%    
+	&__headline
+		font-size: $headline 
+		font-family: roboto-medium
+		margin-bottom: $gutter-1x
+		@media screen and (max-width: $v-small)  
+			font-size: $headline-mobile 
+	&__text
+		font-size: $standard
+		font-family: roboto-regular
+		@media screen and (max-width: $v-small) 
+			font-size: $standard-mobile
+		   
