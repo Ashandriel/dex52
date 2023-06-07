@@ -13,9 +13,38 @@
 
 html
 	scroll-behavior: smooth
+	position: relative 
+	height: 100% 
 	
 a
 	text-decoration: none 
+	
+.page-wrapper
+	display: flex
+	-webkit-flex-direction: column 
+	-ms-flex-direction: column 
+	flex-direction: column 
+	height: 100vh 
+
+.content
+	-webkit-flex: 1 0 auto 
+	-ms-flex: 1 0 auto 
+	flex: 1 0 auto 
+
+.footer-wrapper
+	-webkit-flex-shrink: 0 
+	flex-shrink: 0 
+
+
+.desktop
+	@media screen and (max-width: $v-small) 
+		display: none !important
+
+.mobile
+	display: none !important
+	@media screen and (max-width: $v-small) 
+		display: block !important
+
 
 .wrapper
 	position: relative
@@ -23,60 +52,170 @@ a
 	max-width: 1920px
 	margin: auto 
 	position: relative
-
+	
+	&__max
+		position: relative
+		display: block
+		max-width: 100%
+		margin: auto 
+		position: relative	
+		
+	&__navigation
+		position: fixed
+		width: 100% 
+		max-width: none
+		margin: 0px
+		height: 60px 
+		z-index: 4 
+		&.scrolling
+			background: $black
+			@media screen and (max-width: $v-small) 
+				height: 40px 
+				
 	&__smaller
 		max-width: 1600px 
 
 	&__small
-		max-width: 1280px 		
+		max-width: 1280px
+		
+	&__smallest
+		max-width: 900px		 		
 
 /*MARGINS*/
 
 .mb
-  &--1
-    margin-bottom: $gutter-1x !important
-  &--2
-    margin-bottom: $gutter-2x !important
-  &--3
-    margin-bottom: $gutter-3x !important
-  &--4
-    margin-bottom: $gutter-4x !important
-  &--5
-    margin-bottom: $gutter-5x !important
-  &--6
-    margin-bottom: $gutter-6x !important
-  &--7
-    margin-bottom: $gutter-7x !important
-  &--8
-    margin-bottom: $gutter-8x !important
-  &--9
-    margin-bottom: $gutter-9x !important
-  &--10
-    margin-bottom: $gutter-10x !important
+	&--1
+		margin-bottom: $gutter-1x !important
+	&--2
+		margin-bottom: $gutter-2x !important
+		@media screen and (max-width: $v-small)
+			margin-bottom: $gutter-1x !important
+	&--3
+		margin-bottom: $gutter-3x !important
+	&--4
+		margin-bottom: $gutter-4x !important
+		@media screen and (max-width: $v-small)
+			margin-bottom: $gutter-2x !important
+	&--5
+		margin-bottom: $gutter-5x !important
+	&--6
+		margin-bottom: $gutter-6x !important
+	@media screen and (max-width: $v-small)
+		margin-bottom: $gutter-3x !important
+	&--7
+		margin-bottom: $gutter-7x !important
+	&--8
+		margin-bottom: $gutter-8x !important
+		@media screen and (max-width: $v-small)
+			margin-bottom: $gutter-4x !important
+	&--9
+		margin-bottom: $gutter-9x !important
+	&--10
+		margin-bottom: $gutter-10x !important
+		@media screen and (max-width: $v-small)
+			margin-bottom: $gutter-5x !important
     
 
 .mt
-  &--1
-    margin-top: $gutter-1x !important
-  &--2
-    margin-top: $gutter-2x !important
-  &--3
-    margin-top: $gutter-3x !important
-  &--4
-    margin-top: $gutter-4x !important
-  &--5
-    margin-top: $gutter-5x !important
-  &--6
-    margin-top: $gutter-6x !important
-  &--7
-    margin-top: $gutter-7x !important
-  &--8
-    margin-top: $gutter-8x !important
-  &--9
-    margin-top: $gutter-9x !important
-  &--10
-    margin-top: $gutter-10x !important
+	&--1
+		margin-top: $gutter-1x !important
+	&--2
+		margin-top: $gutter-2x !important
+		@media screen and (max-width: $v-small)
+			margin-top: $gutter-1x !important
+	&--3
+		margin-top: $gutter-3x !important
+	&--4
+		margin-top: $gutter-4x !important
+		@media screen and (max-width: $v-small)
+			margin-top: $gutter-2x !important
+	&--5
+		margin-top: $gutter-5x !important
+	&--6
+		margin-top: $gutter-6x !important
+		@media screen and (max-width: $v-small)
+			margin-top: $gutter-3x !important
+	&--7
+		margin-top: $gutter-7x !important
+	&--8
+		margin-top: $gutter-8x !important
+		@media screen and (max-width: $v-small)
+			margin-top: $gutter-4x !important
+	&--9
+		margin-top: $gutter-9x !important
+	&--10
+		margin-top: $gutter-10x !important
+		@media screen and (max-width: $v-small)
+			margin-top: $gutter-5x !important
 	
+.pt
+	&--1
+		padding-bottom: $gutter-1x !important
+	&--2
+		padding-bottom: $gutter-2x !important
+		@media screen and (max-width: $v-small)
+			padding-bottom: $gutter-1x !important
+	&--3
+		padding-bottom: $gutter-3x !important
+	&--4
+		padding-bottom: $gutter-4x !important
+		@media screen and (max-width: $v-small)
+			padding-bottom: $gutter-2x !important
+	&--5
+		padding-bottom: $gutter-5x !important
+	&--6
+		padding-bottom: $gutter-6x !important
+	@media screen and (max-width: $v-small)
+		padding-bottom: $gutter-3x !important
+	&--7
+		padding-bottom: $gutter-7x !important
+	&--8
+		padding-bottom: $gutter-8x !important
+		@media screen and (max-width: $v-small)
+			padding-bottom: $gutter-4x !important
+	&--9
+		padding-bottom: $gutter-9x !important
+	&--10
+		padding-bottom: $gutter-10x !important
+		@media screen and (max-width: $v-small)
+			padding-bottom: $gutter-5x !important
+    
+
+.pt
+	&--1
+		padding-top: $gutter-1x !important
+	&--2
+		padding-top: $gutter-2x !important
+		@media screen and (max-width: $v-small)
+			padding-top: $gutter-1x !important
+	&--3
+		padding-top: $gutter-3x !important
+	&--4
+		padding-top: $gutter-4x !important
+		@media screen and (max-width: $v-small)
+			padding-top: $gutter-2x !important
+	&--5
+		padding-top: $gutter-5x !important
+	&--6
+		padding-top: $gutter-6x !important
+		@media screen and (max-width: $v-small)
+			padding-top: $gutter-3x !important
+	&--7
+		padding-top: $gutter-7x !important
+	&--8
+		padding-top: $gutter-8x !important
+		@media screen and (max-width: $v-small)
+			padding-top: $gutter-4x !important
+	&--9
+		padding-top: $gutter-9x !important
+	&--10
+		padding-top: $gutter-10x !important
+		@media screen and (max-width: $v-small)
+			padding-top: $gutter-5x !important
+	
+
+
+
 
 
 .space

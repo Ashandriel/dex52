@@ -1,12 +1,23 @@
 .header
 	position: relative
 	text-align: center
-	color: #FFF
+	color: #fff
 
 	&__small
 		min-height: $header-height-small
+		padding-bottom: $gutter-2x 
 		@media screen and (max-width: $v-small) 
 			min-height: $header-height-small-mobile
+		
+		.header__content
+			padding-top: 12rem
+			margin-bottom: $gutter-2x
+			@media screen and (max-width: $v-small)
+				padding-top: 2rem  
+				
+		&.only-headline
+			@media screen and (max-width: $v-small)
+				padding-top: 6rem  		
 
 	&__medium
 		min-height: $header-height-medium
@@ -21,25 +32,43 @@
 	&__content
 		max-width: 540px 			
 		margin: auto
-		padding-top: 12rem 
+		padding-top: 12rem
+		
+		@media screen and (max-width: $v-small)
+			 padding: 20px 
+			 padding-top: 6rem
+		
+		&--smaller-padding
+			padding-top: 6rem 	
+			@media screen and (max-width: $v-smaller)
+				padding-top: 3rem 
+			@media screen and (max-width: $v-small)
+				padding-top: 3rem
+
+		&--duo
+			@media screen and (max-width: $v-small)
+				padding-top: 2rem 
 
 	&__headline
 		font-family: alegreya-extra-bold
 		font-size: $headline-large
-		margin-bottom: $gutter-2x 
+		margin-bottom: $gutter-2x
+		line-height: 100%  
 		@media screen and (max-width: $v-small)
 			font-size: $headline-large-mobile
 			margin-bottom: $gutter-1x 		
 	&__sub-headline
-		font-family: alegreya-medium
-		font-size: $headline 
+		font-family: roboto-regular
+		font-size: $subheadline 
 		margin-bottom: $gutter-2x
+		line-height: 140% 
 		@media screen and (max-width: $v-small)
 			font-size: $headline-mobile
 			margin-bottom: $gutter-1x 		
 	&__text
-		font-family: alegreya-medium
+		font-family: roboto-regular
 		font-size: $standard 
+		line-height: 140%
 		@media screen and (max-width: $v-small)
 			font-size: $standard-mobile
 			margin-bottom: $gutter-1x 		
@@ -53,3 +82,45 @@
 		-o-background-size: cover
 		background-size: cover
 		background-repeat: no-repeat 
+
+	&__support
+		background: url(../../images/bg_lineart_3.png)
+		width: 100% 
+		background-repeat: no-repeat 
+	
+	
+	&__home
+		background: url(../../images/header_cards_flying.png)
+		width: 100% 
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+		@media screen and (max-width: $v-smaller)
+			background: none  
+		
+
+		&--mobile
+			img
+				width: 100% 
+
+			
+	&__player
+		width: 100vw 
+		-webkit-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-repeat: no-repeat
+
+img.overlap
+	position: relative
+	width: 50vw
+	top: 40px 
+	max-height: 600px 
+	object-fit: contain
+	@media screen and (max-width: $v-small)
+		top: 30px 
+
+
+img.home-header__mobile
+	width: 100% 

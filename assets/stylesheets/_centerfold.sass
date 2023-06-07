@@ -1,0 +1,67 @@
+.centerfold
+	background: rgb(236,155,116)
+	background: linear-gradient(90deg, transparent 0%, $black 50%)
+	background: -moz-linear-gradient(0deg, transparent 0%, $black 50%)
+	background: -webkit-linear-gradient(0deg, transparent 0%, $black 50%)  
+	display: block
+	position: relative
+	width: 100% 
+	text-align: center
+	@media screen and (max-width: $v-medium)
+		background: $black
+		width: 80%
+		position: relative
+		margin: auto  
+	@media screen and (max-width: $v-small)
+		width: 100% 
+	&__left
+		display: inline-block
+		width: 50% 
+		@media screen and (max-width: $v-medium)
+			width: 100% 
+	&__right
+		display: inline-block
+		width: 49% 
+		
+		vertical-align: top 
+		padding: $gutter-10x
+		color: #fff  
+		@media screen and (max-width: $v-small)
+			padding: $gutter-2x
+		 
+		
+		@media screen and (max-width: $v-medium)
+			width: 80%
+		@media screen and (max-width: $v-small)
+			width: 100%			  
+			
+	&__text
+		font-family: roboto-regular
+		font-size: $standard
+		line-height: 140% 
+		margin-bottom: $gutter-1x   
+		text-align: left
+	
+
+	ul
+		list-style-type: none 	
+		margin-bottom: $gutter-2x
+		li
+			margin-bottom: $gutter-1x
+			font-family: roboto-regular
+			font-size: $standard   
+			line-height: 140% 
+			text-align: left
+
+	h3
+		margin-bottom: $gutter-1x 
+		text-align: left
+
+img.centerfold
+	max-height: 100% 
+	max-width: 100%
+	object-fit: contain
+	@media screen and (max-width: $v-medium)
+		max-height: 520px  
+	
+

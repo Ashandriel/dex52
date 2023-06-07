@@ -16,10 +16,19 @@
   }
 }
 
-
 .col-full{
-  width: calc(100% - 0.4rem);
+  width: calc(100%);
   padding: 0 !important
+}
+
+.col-1-of-2--early {
+  width: calc((100% - 0.4rem) / 2);
+  @media screen and (max-width: $v-smaller) {
+    width: 100%;
+  }
+  @media screen and (max-width: $v-small) {
+    width: 100%;
+  }
 }
 
 .col-1-of-2 {
@@ -28,6 +37,7 @@
     width: 100%;
   }
 }
+
 
 .col-1-of-3 {
   width: calc((100% - 2 * 0.4rem ) / 3);
@@ -281,6 +291,10 @@
   @media screen and (max-width: $v-small) {
     width: 100%;
   }
+}
+
+.no-padding{
+  padding: 0 !important; 
 }
 
 

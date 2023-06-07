@@ -1,9 +1,91 @@
 /*text*/
 
 h1
+	display: inline-block
 
 h2
 
 h3
+	font-family: alegreya-bold
+	font-size: $headline  
+	@media screen and (max-width: $v-small)
+		font-size:  $headline-mobile
 
 p
+	font-family: roboto-regular
+	font-size: $standard  
+	line-height: 140% 
+	@media screen and (max-width: $v-small)
+		font-size: $standard-mobile
+	
+	&.larger
+		font-size: $subheadline
+		font-family: roboto-medium 
+		@media screen and (max-width: $v-small)
+			font-size: $headline-mobile
+			
+	a
+		font-family: roboto-bold 
+		color: $black
+		border-bottom: 4px solid $black  
+		&:hover
+			color: $brand
+			border-bottom: 4px solid $brand  
+
+
+.textblock
+	p
+		margin-bottom: $gutter-1x  
+
+h2
+	font-size: $headline-large
+	font-family: alegreya-bold
+	@media screen and (max-width: $v-small)
+		font-size: $headline-large-mobile
+	&.gradient
+		&__1  		
+			background: -webkit-linear-gradient(0deg, $color-1-g 0%, $color-1 50%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+
+		&__2  		
+			background: -webkit-linear-gradient(0deg, $color-2-g, $color-2)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+		
+		&__3  		
+			background: -webkit-linear-gradient(0deg, $color-3-g, $color-3)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+		
+		&__4  		
+			background: -webkit-linear-gradient(0deg, $color-4-g, $color-4)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+		
+		&__5  		
+			background: -webkit-linear-gradient(0deg, $color-5-g, $color-5)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+		
+		&__6  		
+			background: -webkit-linear-gradient(0deg, $color-6-g, $color-6)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+		
+		&__7  		
+			background: -webkit-linear-gradient(0deg, $color-7-g, $color-7)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent		
+		
+		&__8  		
+			background: -webkit-linear-gradient(0deg, $color-8-g, $color-8)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent																
+
+.t-c
+	text-align: center
+.t-l
+	text-align: left
+.t-r
+	text-align: right

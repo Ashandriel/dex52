@@ -1,0 +1,50 @@
+.notice
+	position: relative
+	display: inline-block
+	height: 100% 
+	padding: 20px 40px 20px 40px 
+	-webkit-border-radius: 40px 
+	border-radius: 40px   
+	p
+		display: inline
+	@media screen and (max-width: $v-medium)
+		margin: 0 10px 
+		 	
+
+	&__magenta
+		background: $brand2
+		color: #fff
+		a
+			color: #fff 
+			border-bottom: 2px solid #fff
+			
+			&:hover
+				border-bottom: 2px solid $black		
+				color: $black 
+				
+	&__white
+		background: #FFF
+		color: $brand
+		a
+			color: $brand
+			border-bottom: 2px solid $brand
+			&:hover
+				border-bottom: 2px solid $black
+				color: $black
+
+	.inverted
+		&__magenta
+			font-family: roboto-medium 
+			background: #fff
+			padding: 5px 10px 
+			border-radius: 30px
+			color: $brand2
+			margin-right: 10px 
+			
+		&__orange
+			font-family: roboto-medium 
+			background: $brand
+			padding: 5px 10px 
+			border-radius: 30px
+			color: #FFF
+			margin-right: 10px 			

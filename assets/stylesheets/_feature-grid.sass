@@ -10,11 +10,17 @@
 		font-size: $headline 
 		font-family: roboto-medium
 		margin-bottom: $gutter-1x
+		line-height: 140% 
 		@media screen and (max-width: $v-small)  
 			font-size: $headline-mobile 
 	&__text
 		font-size: $standard
 		font-family: roboto-regular
+		line-height: 140% 
 		@media screen and (max-width: $v-small) 
 			font-size: $standard-mobile
-		   
+	&__image
+		img
+			position: relative
+			max-width: 250px
+			margin: auto 

@@ -6,12 +6,21 @@ $medium: 1rem;
 
 /*colors*/
 
+$black:  #19002e;
+$grey:   #84778a;
+$grey-l: #b9b2b8;
+
+$brand: #e7714a;
+$brand2: #d1335d;
+$brand3: #841e69;
+$brand4: #df4b76;
+
 $color-1: #d1335d;
-$color-2: #ec9b74;
+$color-2: #d1335d;
 $color-3: #841e69;
 $color-4: #6a7bca;
 $color-5: #60a5c6;
-$color-6: #80a5c6;
+$color-6: #60a5c6;
 $color-7: #67bd93;
 $color-8: #ec9b74;
 
@@ -28,7 +37,7 @@ $color-8-g: #e6ce85;
 
 /*viewports*/
 
-$v-medium: 1200px;
+$v-medium: 1240px;
 $v-smaller: 1000px;
 $v-small: 600px;
 
@@ -52,19 +61,21 @@ $gutter-10x: 10rem; //50px
 /*font-sizes*/
 
 $standard: 22px;
-$standard-mobile: 11px;
+$standard-mobile: 22px;
+$subheadline: 28px;
+$subheadline-mobile: 28px;
 $buttons: 20px;
-$buttons-mobile: 9px;
+$buttons-mobile: 20px;
 $headline: 32px;
-$headline-mobile: 14px;
+$headline-mobile: 28px;
 $headline-large: 56px;
-$headline-large-mobile: 20px;
+$headline-large-mobile: 36px;
 
 /*header-heights*/
 
 $header-height-small: 320px;
 $header-height-medium: 540px;
-$header-height-large: 920px;
+$header-height-large: 720px;
 
 $header-height-small-mobile: 320px;
 $header-height-medium-mobile: 480px;
